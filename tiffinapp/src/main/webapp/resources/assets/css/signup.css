@@ -1,0 +1,48 @@
+.main{
+    box-shadow: 1px 1px 1px 1px #a2a2a2;
+    width: 350px;
+    display: block;
+    margin: 15px auto;
+    padding: 20px;
+}
+.sub{
+    padding: 8px 0px;
+}
+.sub p{
+    margin-left: 3px;
+    padding: 4px 0 0 0 ;
+}
+.sub h4{
+    text-align: center;
+    padding: 0px 0 10px 0 ;
+}
+.submit_button{
+    display: block;
+    margin: 10px auto 10px;
+    padding: 5px 20px;
+    border: 0px;
+    background-color: #167716;
+    color: #e5e5e5;
+}
+.submit_button:hover{
+    background-color: #178b17;
+    transition-delay: 0.09s;
+    color: white;
+}
+@media(min-width:992px){
+.main{
+    width: 550px;
+    margin: 50px auto 0px;
+}
+    .sub p{
+    margin-left: 100px;
+    padding: 4px 0 0 0 ;
+}
+    .sub h4{
+    text-align: center;
+    padding: 0px 0 30px 0 ;
+}
+    .submit_button{
+    margin: 20px auto 10px;
+}
+}
