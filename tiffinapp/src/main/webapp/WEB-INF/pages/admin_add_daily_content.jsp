@@ -24,6 +24,7 @@
   <%} %>
 </head>
 <body>
+Testing Git ....
 <div class="container">
 	<form action="addDailyContent" method="post">         
         <div class="main">
