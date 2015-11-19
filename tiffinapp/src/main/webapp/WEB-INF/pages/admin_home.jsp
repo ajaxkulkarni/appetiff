@@ -58,7 +58,7 @@ testing git
                 <div class="col-lg-12">
                    
                     <div class="intro-text">
-                        <span class="name">Vendorsssss</span>
+                        <span class="name">Vendors</span>
                         
                     </div>
                 </div>

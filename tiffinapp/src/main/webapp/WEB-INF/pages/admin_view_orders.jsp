@@ -212,7 +212,7 @@
 
 
 
-	<script type="text/javascript"
+<script type="text/javascript"
 		src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 	<script type="text/javascript"

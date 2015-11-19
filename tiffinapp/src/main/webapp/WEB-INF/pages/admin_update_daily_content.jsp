@@ -82,7 +82,7 @@
                                 <div class="col-md-5">
                                     <input type="text" name="subItem1" value="${dailyContent.subItem1}" class="form-control">
                                 </div>
-                            </div>
+                           </div>
                             <div class="row rowdiv">
                                 <div class="col-md-6">
                                     <h5>Rice/Dal</h5>

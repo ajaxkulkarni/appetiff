@@ -48,7 +48,7 @@
 				<div class="col-lg-12">
                 <a class="navbar-brand" href="#page-top">tiffEat</a>
 				
-				</div>
+			</div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

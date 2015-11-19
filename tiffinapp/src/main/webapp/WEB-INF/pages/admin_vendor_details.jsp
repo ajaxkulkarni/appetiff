@@ -114,7 +114,7 @@
 	<a href="getMealOrders.htm?mealId=${meal.id}&type=${meal.content.mealType}">View Orders</a>
 	</div>
 	
-	<div class="edit_meal">
+<div class="edit_meal">
 	<a href="editMeal.htm?mealId=${meal.id}">Edit Meal</a>
 	
 	</div>
