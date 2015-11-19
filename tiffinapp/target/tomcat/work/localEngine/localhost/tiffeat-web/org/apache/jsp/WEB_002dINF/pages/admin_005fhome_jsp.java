@@ -110,7 +110,7 @@ static {
       out.write("<title>Admin | Home</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body id=\"page-top\" class=\"index\">\r\n");
-      out.write("\r\n");
+      out.write("testing git\r\n");
       out.write("    <!-- Navigation -->\r\n");
       out.write("    <nav class=\"navbar navbar-default navbar-fixed-top\">\r\n");
       out.write("        <div class=\"container\">\r\n");
