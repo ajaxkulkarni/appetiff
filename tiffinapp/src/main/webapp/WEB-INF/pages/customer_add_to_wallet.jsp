@@ -17,7 +17,7 @@
         <div class="add_wallet_card">
             <div class="row">
                 <div class="col-md-6">
-                    <img alt="no_image" src="<c:url value = "${resources}/img/payment_del.png"/>" class="img-responsive wallet_img1">
+                    <img alt="no_image" src="<c:url value = "/resources/img/payment_del.png"/>" class="img-responsive wallet_img1">
                 </div>
                 <div class="col-md-6">
                     <h3 class="add_wallet_title">Wallet Balance</h3>
@@ -39,6 +39,8 @@
 
  
     </div>
-	<%@include file="footer.jsp" %>
+
+<%@include file="footer.jsp" %>
+
 </body>
 </html>

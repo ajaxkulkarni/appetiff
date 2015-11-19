@@ -23,8 +23,47 @@
   <link href="<c:url value = "../../resources/assets/css/meals_select.css"/>" rel="stylesheet">
   <%} %>
 </head>
-<body>
-Testing Git ....
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<div class="col-lg-12">
+                <a class="navbar-brand" href="#page-top">tiffEat</a>
+				
+				</div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<br />
+<br />
+<br />
+<br />
+<div class="tiffin_name>">
+<h2>Mahalaxmi tiffin service</h2>
+</div>
+
+<div class="wrapper1">
+<div class="col-lg-12">
+<a href = "admin.htm?vendorEmail=${vendor.email}">Back</a>
+</div>
+</div>
+
+<br />
 <div class="container">
 	<form action="addDailyContent" method="post">         
         <div class="main">

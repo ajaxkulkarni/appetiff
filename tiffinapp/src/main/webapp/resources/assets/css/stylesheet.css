@@ -54,3 +54,8 @@ a{
 .starRating:not(:hover) > :checked ~ label:before{
   opacity : 1;
 }
+
+.wrapper2{
+	margin-left: 1240px;
+	font-size: 60px;
+}

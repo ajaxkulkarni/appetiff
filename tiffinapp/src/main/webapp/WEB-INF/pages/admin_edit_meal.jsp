@@ -34,11 +34,37 @@
       
     </head>
     <body class="drawer drawer-left">
-        <form action="editMeal" method="post" enctype="multipart/form-data">
+        <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<div class="col-lg-12">
+                <a class="navbar-brand" href="#page-top">tiffEat</a>
+				
+				</div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <br />
+    <br />
+       
+ <form action="editMeal" method="post" enctype="multipart/form-data">
         <div class="container">
         <div class="wow bounceInUp">
             <div class="main">
                 <div class="row sub">
+               
                      <h4>Add New Meal</h4>
                 </div>
                 <div class="row sub">

@@ -25,13 +25,24 @@
 		    }
 		}
 		$("#modalMealType").text("Meal Type :" +mealType);
-		$("#modalAddress").text("Address : " + $("#txtAddress").text());
-		$("#modalPhone").text("Phone :" + $("#txtPhone").val());
 		$("#payment_Modal").modal('show');
 		return false;
     }
     
    </script>
+  <%--  <script type="text/javascript" src="<c:url value="/resources/js/backfix.min.js"/>"></script> --%>
+	<!-- <script type="text/javascript">
+	bajb_backdetect.OnBack = function()
+	{
+		alert('You clicked it!');
+		window.location.href = "http://www.stackoverflow.com"
+	}
+	
+	/* function gotourl() {
+		window.location.href = "http://www.stackoverflow.com";
+	} */
+	
+	</script> -->
 </head>
 <body >
 
@@ -47,7 +58,7 @@
 			</div>
 		  </c:if>
 		  <fmt:formatDate pattern="yyyy-MM-dd" value="${customerOrder.date}" var="orderDate" />
-          Order Date : ${orderDate} <br/>
+          Order For : ${orderDate} <br/>
           Meal : ${customerOrder.meal.title}
             <div class="row">
                 <div class="col-md-6">
@@ -55,41 +66,29 @@
                     	<input type="hidden" name="customer.id" value="${customerOrder.customer.id}"/>
                     	<input type="hidden" name="meal.price" value="${customerOrder.meal.price}"/>
                     	<input type="hidden" name="meal.price" value="${customerOrder.meal.title}"/>
-                        <input class="form-control" type="hidden" readonly="readonly"  id="name1" name="customer.name" value="${customerOrder.customer.name}" placeholder="What's your name?" required="required" maxlength="50" />
-                        <input class="form-control" type="hidden" readonly="readonly" id="email_id" name="customer.email" placeholder="EMAIL ID" value="${customerOrder.customer.email}"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="30" required="required"/>
-                  		Order for : ${customerOrder.customer.name} <br/>
-                  		Email : ${customerOrder.customer.email} <br/>
+                        <input class="form-control" type="text" readonly="readonly"  id="name1" name="customer.name" value="${customerOrder.customer.name}" placeholder="What's your name?" required="required" maxlength="50" />
+                        <input class="form-control" type="text" maxlength="15" pattern="^(\+?\d{1,4}[\s-])?(?!0+\s+,?$)\d{10}\s*,?$" id="mobile_no" name="customer.phone" value="${customerOrder.customer.phone}" placeholder="MOBILE NUMBER" required="required"/>
+                      	<input class="form-control" type="text" readonly="readonly" id="email_id" name="customer.email" placeholder="EMAIL ID" value="${customerOrder.customer.email}"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="30" required="required"/>
                   		Area : ${customerOrder.area} <br/>
                   		Price : ${customerOrder.meal.price}
-                  		<input class="form-control" type="text" maxlength="15" pattern="^(\+?\d{1,4}[\s-])?(?!0+\s+,?$)\d{10}\s*,?$" id="txtPhone" name="customer.phone" value="${customerOrder.customer.phone}" placeholder="MOBILE NUMBER" required="required"/>
-                    	<textarea class="form-control" type="text" rows= "3" id="txtAddress" name="address"  text="${customerOrder.customer.previousOrders[0].address}" placeholder="ADDRESS" maxlength=150 minlength=10 required>${customerOrder.address}</textarea>
-                      	Meal timing :
+                    	<textarea class="form-control" type="text" rows= "3" id="address" name="address"  text="${customerOrder.customer.previousOrders[0].address}" placeholder="ADDRESS" maxlength=150 minlength=10 required>${customerOrder.address}</textarea>
                       	<c:forEach var="type" items="${mealType}">
  					 		<label class="radio option_radio">
                       		<input type="radio" id="option-1" class="" name="mealType" value="${type}" required="required"/>
                       		<span class="">${type}</span>
                     		</label>
 			      		</c:forEach>
-			      		Payment method : <br/>
-			      		<label class="radio option_radio">
-                      		<input type="radio" id="option-1" class="" name="paymentType" value="ONLINE" required="required"/>
-                      		<span class="">Online Payment</span>
-                    	</label>
-                    	<label class="radio option_radio">
-                      		<input type="radio" id="option-1" class="" name="paymentType" value="CASH" required="required"/>
-                      		<span class="">Cash on delivery</span>
-                    	</label>
                   		<input type="hidden" name="meal.id" value="${customerOrder.meal.id}"/>
                   		<input type="hidden" name="meal.id" value="${customerOrder.meal.title}"/>
                   		<input type="hidden" name="area" value="${customerOrder.area}"/>
                         <label class="checkbox chbox1">
-                            <input type="checkbox" value="agree" required>I agree to <a href = "terms.htm" class="universal_link" target="_blank">terms and conditions</a>
+                            <input type="checkbox" value="agree" required>I agree to <a href = "terms.htm" class="universal_link">terms and conditions</a>
                         </label>
                         <button class="btn order_button" type="submit">Order</button>
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <img src="<c:url value="${resources}/img/Payment-Methods-Icons.jpg"/>" class="img-responsive payment_method_icon" alt="payment_method_icon">
+                    <img src="<c:url value="/resources/img/Payment-Methods-Icons.jpg"/>" class="img-responsive payment_method_icon" alt="payment_method_icon">
                 	
                 </div>
             </div>
@@ -109,11 +108,10 @@
                   <div class="row">
                       <div class="col-md-6">
                           <h6 class="order_label1">Meal : ${customerOrder.meal.title}</h6>
-                          <h6 class="order_label1">Order For : ${orderDate}</h6>
+                          <h6 class="order_label1">Order For: ${orderDate}</h6>
                           <h6 class="order_label1"><div id= "modalMealType"></div></h6>
-                          <h6 class="order_label1"><div id= "modalAddress"></div></h6>
-                          <h6 class="order_label1"><div id= "modalPhone"></div></h6>
-                          <h6 class="order_label1">Price : ${customerOrder.meal.price}</h6>
+                          <h6 class="order_label1">Area: ${customerOrder.area}</h6>
+                          <h6 class="order_label1">Price:${customerOrder.meal.price}</h6>
                       </div>
                       <div class="col-md-6">
                   		<img src="getMealImage.htm?mealId=${customerOrder.meal.id}" alt="no_image" class="order_img1 img-responsive">
@@ -139,6 +137,8 @@
     }
     
 	</script>
-    <%@include file="footer.jsp" %>
+	        
+  <%@include file="footer.jsp" %>
+      
   </body>
 </html>

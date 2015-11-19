@@ -29,10 +29,11 @@
         <div class="container">
 				<div class="col-lg-12">
                 <a class="navbar-brand" href="admin.htm">tiffEat</a>
-				</div>
 				<div class="username">
 				<a href="editVendor.htm?vendor=${vendor.email}">${vendor.name}</a>
 				</div>
+				</div>
+				
         </div>
     </nav>
 
@@ -46,12 +47,14 @@
 		<br />
 		
 	<div class="row">
-<div class="wrapper">
-<div class="col-lg-6">
+	<div class="col-lg-12">
+	<div class="wrapper">
 
-    <a href = "addNewMeal.htm?vendorEmail=${vendor.email}">Add Meal</a>
-	<a href="vendorOrders.htm"></a><button class="button">Orders</a></button>
-	</div>
+<a href = "addNewMeal.htm?vendorEmail=${vendor.email}">Add Meal</a>
+</div>
+ </div>
+<div class="wrapper1">
+<a href = "admin.htm?vendorEmail=${vendor.email}">Back</a>
 </div>
 </div>
 
@@ -68,8 +71,8 @@
         <div class="card-block">
             <h4 class="card-title">
 			${meal.title}
-			<a href="welcome.html">
-			<img class="img-top" src="edit45.png"></a></h4>
+			<!--  <a href="welcome.html">
+			<img class="img-top" src="edit45.png">--></a></h4>
 			
 			<div class="price">
 			<h4>${meal.price}</h4>
@@ -84,7 +87,7 @@
 		<c:choose>
 				<c:when test="${meal.status == 'DISPATCH' || meal.content == null}">
 					<div class="card-block">
-            			<a href="addDailyContent.htm?mealId=${meal.id}" class="btn btn-primary">Add Content</a>
+            			<a href="addDailyContent.htm?mealId=${meal.id}" class="btn btn-primary">Add Menu</a>
         			</div>
 				</c:when>
 				<c:when test="${meal.status == 'PREPARE'}">
@@ -100,17 +103,37 @@
 				</c:when>
 				<c:otherwise>
 					<div class="card-block">
-            			<a href="addDailyContent.htm?mealId=${meal.id}" class="btn btn-primary">Add Content</a>
+            			<a href="addDailyContent.htm?mealId=${meal.id}" class="btn btn-primary">Add Menu</a>
         			</div>
 				</c:otherwise>
 				</c:choose>
     	</div>
 	</div>
+	<div class="row">
+	<div class="view_orders">
 	<a href="getMealOrders.htm?mealId=${meal.id}&type=${meal.content.mealType}">View Orders</a>
+	</div>
+	
+	<div class="edit_meal">
 	<a href="editMeal.htm?mealId=${meal.id}">Edit Meal</a>
+	
+	</div>
+	</div>
 	</div>
 	</c:forEach>
 	</div>
-	
+<br />
+<br />
+<!-- <footer>
+	<div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                      Copyright &copy; 2015 tiffEat.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->	
 </body>
 </html>

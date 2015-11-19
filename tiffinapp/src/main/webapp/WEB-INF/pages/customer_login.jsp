@@ -58,6 +58,39 @@
                 </div>
         </div>
 </div>
-	<%@include file="footer.jsp" %>
+    
+    
+    <%-- <form action="" method="post" name="">
+     <div class="container">
+        <div class="main wow bounceInUp">
+            <div class="col-md-6 image">
+                <img src="img/tiffin-box-250x250.jpg">
+            </div>
+            
+            <div class="col-md-6 login">
+                <h4>Sign in</h4>
+                <form action="customerLogin" method="post">
+                <div class="sub">
+                   <input type="email" name="email"  maxlength="30" placeholder="User Name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" required/>
+                </div>
+                <div class="sub">
+                    <input type="text" name="password" placeholder="Password" class="form-control" required="required" title="Password has 8-20 characters, having at least one uppercase char, at least on lowercase char, at least one number, and one special char">
+                </div>
+                <div class="submitdiv">
+                    <input type="submit" name="" class="form-control subbutton">
+                </div>
+                <div class="text">
+                    <p>Click Here For<a href="signup.html">SignUp</a></p>
+                </div>
+                </form>
+                 <div class="sub">
+<!--                    <img src="img/images.jpg" class="google_sign_in" alt="Login With Google" title="Login With gmail">-->
+                     <span class="gmail_login"><img src="img/images.jpg" class="google_sign_in" alt="Login With Google" title="Login With gmail"><a href="">Login With Google</a></span>
+                </div>
+            </div>
+        </div>
+    </div> --%>
+        <%@include file="footer.jsp" %>
+        
     </body>
 </html>
