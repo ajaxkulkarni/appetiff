@@ -43,6 +43,7 @@ public interface Constants {
 	String ROOT_DIRECTORY = "F:/Resoneuronance/TiffEat/Data/Images/";
 	//String ROOT_DIRECTORY = "/home/tiffeat/Images/";
 	String ASSETS_ROOT = "/resources";
+	//String ASSETS_ROOT = "../../resources/assets";
 	
 	String GOOGLE_GET_CODE_URL = "https://accounts.google.com/o/oauth2/auth?" +
 			  "scope=email"
@@ -80,7 +81,10 @@ public interface Constants {
 	
 	String RESULT_URL_QUICK = "http://"+ HOST_URL + "/tiffeat-web/paymentResult";
 	String PRODUCT_INFO = "Tiffeat";
-	String MERCHANT_KEY = "gtKFFx";
+	//String MERCHANT_KEY = "gtKFFx";
+	String MERCHANT_KEY = "SvGyqj";
+	//String MERCHANT_SALT = "eCwWELxi";
+	String MERCHANT_SALT = "3pfnUWXj";
 	
 	//5123456789012346
 	//quc1iGQZKN4HD

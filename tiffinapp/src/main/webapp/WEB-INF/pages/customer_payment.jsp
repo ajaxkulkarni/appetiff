@@ -9,8 +9,9 @@
 <body>
 
 Redirecting to payment gateway.. Please do not close or refresh..
-
-<form id = "payment_form" action='https://test.payu.in/_payment' method='post'>
+<!-- https://test.payu.in/_payment -->
+<!-- <form id = "payment_form" action='https://test.payu.in/_payment' method='post'> -->
+<form id = "payment_form" action='https://secure.payu.in/_payment' method='post'>
 <input type="hidden" name="firstname" value="${payUDetails.name}" />
 <input type="hidden" name="surl" value="${payUDetails.successUrl}" />
 <input type="hidden" name="phone" value="${payUDetails.phone}" />
