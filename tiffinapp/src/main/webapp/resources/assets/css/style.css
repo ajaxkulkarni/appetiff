@@ -103,12 +103,5 @@ position: absolute;
 	float: right;
 }
 
-.universal_link{
-	color: black;
-}
-
-.universal_link:hover{
-	color: blue;
-}
 
 }

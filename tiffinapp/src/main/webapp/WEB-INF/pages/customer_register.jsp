@@ -25,7 +25,7 @@ $(function(){
 	<div id = "customerEmail">${customer.email}</div>
    <div class="container-fluid">
         <div class="row">
-        	<form action="registerCustomer" method="post" onsubmit="return checkPasswordMatch()">
+        	<form action="registerCustomer" method="post">
                 <div class="col-md-8 col-md-offset-2 register_box">
                     <h4 class="register_form_title">Registration Form</h4> 
                     <a href="customerLogin.htm" style="color:black;">Already Registered? Login</a>
@@ -58,7 +58,7 @@ $(function(){
                         
                         <div class="col-md-9">
                          <label class="checkbox">
-                             <input type="checkbox" name="remember" id="remember" required>I accept all <a href = "terms.htm" class="universal_link" target="_blank">terms and conditions.</a>
+                             <input type="checkbox" name="remember" id="remember" required>I accept all <a href = "terms.htm" class="universal_link">terms and conditions.</a>
                         </label>
                         </div>
 						<button type="submit" class="btn btn-success col-md-4">Register</button>
@@ -68,7 +68,9 @@ $(function(){
         	</form>
         </div>
 	</div>
+   
    <%@include file="footer.jsp" %>
+   
 </body>
 
 <script>
@@ -81,12 +83,10 @@ $(function(){
         $("#password_error").html("Passwords do not match!");
 //        document.getElementById("password_confirm").style.borderColor = "#E34234";
         document.getElementById("password_confirm").style.borderColor = "#E34234";
-        return false;
     }else
     {
         $("#password_error").html("Passwords match.");
         document.getElementById("password_confirm").style.borderColor = "#99e334";
-        return true;
     }
 }
 

@@ -36,6 +36,7 @@
 .type h5{
     margin-left: 20px;
 }
+
 .rowdiv{
     margin: 10px auto;
 }
@@ -74,4 +75,113 @@
     font-size: 20px;
     color: rgba(0, 0, 0, 0.54)
 }    
+}
+
+.wrapper1{
+	margin-left: 1240px;
+	font-size: 20px;
+}
+
+header {
+	text-align: center;
+	color: #fff;
+	background: #7E57C2;
+}
+
+header .container {
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
+header img {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+	display: block;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	width:100%;
+}
+
+header .intro-text .skills {
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+@media ( min-width :768px) {
+	header .container {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	header .intro-text .name {
+		font-size: 4.75em;
+	}
+	header .intro-text .skills {
+		font-size: 1.75em;
+	}
+}
+
+@media ( min-width :768px) {
+	.navbar-fixed-top {
+		padding: 12px 0;
+		-webkit-transition: padding .3s;
+		-moz-transition: padding .3s;
+		transition: padding .3s;
+		background: #1c2c39;
+		
+	}
+	.navbar-fixed-top .navbar-brand {
+		font-size: 2em;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		transition: all .3s;
+		color: #ffffff;
+		
+	}
+	.navbar-fixed-top.navbar-shrink {
+		padding: 10px 0;
+		
+		
+	}
+	.navbar-fixed-top.navbar-shrink .navbar-brand {
+		font-size: 1.5em;
+	
+	}
+	
+}
+
+.navbar {
+	/*text-transform: uppercase;*/
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.navbar a:focus {
+	outline: 0;
+}
+
+.navbar .navbar-nav {
+	letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+	outline: 0;
+}
+
+.navbar-default, .navbar-inverse {
+	border: 0;
+}
+
+
+h2{
+	margin-left:150px;
+}
+
+.wrapper1 {
+	margin-left: 1250px;
+	font-size: 20px;
+	padding-top:2px;
 }

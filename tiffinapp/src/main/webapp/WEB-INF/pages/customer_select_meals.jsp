@@ -40,6 +40,37 @@
         </div>
         </c:forEach>
     </div>
-    <%@include file="footer.jsp" %>
+      
+      <%-- <div class="container1">
+          <h2 class="header_title">${vendor.email}:</h2>
+          <c:forEach items="${vendor.meals}" var="meal">
+            <div class="row list1">
+                <div class="col-md-4">
+                    <img src="img/img.ico" alt="no-image" class="order_img"/>
+                </div>
+                <div class="col-md-7">
+                    <h3 class="header_sub_title">${meal.title}</h3>
+                    <h4 class="header_sub_heading">${meal.description}</h4>
+                    <h4 class="header_sub_heading">${meal.price}</h4>
+                    <label class="label_served">served : </label>
+                    <div class="submit_order">
+                    <form action="selectMealFormat" method="post">
+                    	<input type="hidden" name="title" value="${meal.title}"/>
+                    	<input type="hidden" name="id" value="${meal.id}"/>
+                    	<input type="hidden" name="description" value="${meal.description}"/>
+                    	<input type="hidden" name="price" value="${meal.price}"/>
+                    	<input type="hidden" name="pinCode" value="${pinCode}"/>
+                      <button class="order1" type="submit">
+                        ORDER
+                      </button>
+                      </form>
+                    </div>
+                </div>
+             </div>
+           </c:forEach>
+      </div> --%>
+      
+  <%@include file="footer.jsp" %>
+  
 </body>
 </html>

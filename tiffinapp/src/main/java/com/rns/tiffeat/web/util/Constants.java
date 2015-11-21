@@ -40,7 +40,7 @@ public interface Constants {
 	String GOOGLE_ACCESS_TOKEN = "access_token";
 	String GOOGLE_GET_ACCESS_TOKEN_URL = "https://accounts.google.com/o/oauth2/token";
 	
-	String ROOT_DIRECTORY = "F:/Resoneuronance/TiffEat/Data/Images/";
+	String ROOT_DIRECTORY = "D:/Resoneuronance/TiffEat/Data/Images/";
 	//String ROOT_DIRECTORY = "/home/tiffeat/Images/";
 	String ASSETS_ROOT = "/resources";
 	//String ASSETS_ROOT = "../../resources/assets";
@@ -77,7 +77,7 @@ public interface Constants {
 	String MODEL_ORDER_STATUS = "status";
 	String MODEL_ADMIN = "admin";
 	
-	String HOST_URL = "localhost:8080";
+	String HOST_URL = "192.168.0.2:8080";
 	
 	String RESULT_URL_QUICK = "http://"+ HOST_URL + "/tiffeat-web/paymentResult";
 	String PRODUCT_INFO = "Tiffeat";

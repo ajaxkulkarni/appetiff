@@ -23,8 +23,6 @@ Redirecting to payment gateway.. Please do not close or refresh..
 <input type="hidden" name="productinfo" value="${payUDetails.productInfo}" />
 <input type="hidden" name="amount" value="${payUDetails.amount}" />
 <input type="hidden" name="email" value="${payUDetails.email}" />
-<input type="hidden" name="drop_category" value="COD,CASH,EMI" />
-
 <input type= "submit" value="submit" style="display:none"/>
 </form>
 

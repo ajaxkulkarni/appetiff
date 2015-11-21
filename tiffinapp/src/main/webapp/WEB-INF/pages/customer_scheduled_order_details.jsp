@@ -55,8 +55,6 @@ function proceed() {
                   <input type="hidden" name="customer.id" value="${customerOrder.customer.id}"/>
                   <input type="hidden" name="area" value="${customerOrder.area}"/>
                   <%-- <input type="hidden" name="date" value="${customerOrder.date}"/> --%>
-                  Scheduling for : ${customerOrder.customer.name} <br/>
-                  Email : ${customerOrder.customer.email}
                   <div class="divspacing">
                     <!-- <input class="form-control" type="text"  placeholder="My Tiffin"/> -->
                     ${customerOrder.meal.title}
@@ -69,11 +67,8 @@ function proceed() {
                       <!-- <input class="form-control" type="text" id="" name="" placeholder="ABC ABC"/> -->
                      ${customerOrder.meal.price}
                   </div>
-                  Area : ${customerOrder.area}
-			      <br/>
-			      Scheduled From : ${orderDate}
                   <div class="divspacing">
-                      <input class="form-control" type="hidden" readonly="readonly" id="" name="customer.email" value="${customerOrder.customer.email}"/>
+                      <input class="form-control" type="text" readonly="readonly" id="" name="customer.email" value="${customerOrder.customer.email}"/>
                   </div>
                   <div class="divspacing">
                         <input class="form-control" type="text" maxlength="15" pattern="^(\+?\d{1,4}[\s-])?(?!0+\s+,?$)\d{10}\s*,?$" id="mobile_no" name="customer.phone" value="${customerOrder.customer.phone}" placeholder="MOBILE NUMBER" required/>
@@ -89,12 +84,14 @@ function proceed() {
                     </label>
 			      </c:forEach>
 			      </div>
+			      Area : ${customerOrder.area}
 			      <br/>
+			      Scheduled From : ${orderDate}
 			      <div class="divspacing">
                   		<textarea class="form-control" type="text" pattern="" id="" name="address" placeholder="ADDRESS" required="required">${customerOrder.address}</textarea>
                   </div>
                   <label class="checkbox chbox1">
-                            <input type="checkbox" value="agree" required>I agree to <a href = "terms.htm" style="color:black;" target="_blank">terms and conditions</a>
+                            <input type="checkbox" value="agree" required>I agree to <a href = "terms.htm" style="color:black;">terms and conditions</a>
                         </label>
                   <div class="submit_order">
                       <input type="submit" name="" value="ORDER" class="order_button">
@@ -156,6 +153,10 @@ function proceed() {
     	return r;
 	}
 	</script>
+    
+    
     <%@include file="footer.jsp" %>
+    
+    
   </body>
 </html>

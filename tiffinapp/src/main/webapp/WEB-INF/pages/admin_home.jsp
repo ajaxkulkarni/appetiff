@@ -27,7 +27,7 @@
 <title>Admin | Home</title>
 </head>
 <body id="page-top" class="index">
-
+testing git
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -41,6 +41,7 @@
                 </button>
 				<div class="col-lg-12">
                 <a class="navbar-brand" href="#page-top">tiffEat</a>
+				
 				</div>
             </div>
 
@@ -50,7 +51,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
+    <!-- Header 
     <header>
         <div class="container">
             <div class="row">
@@ -63,7 +64,12 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 	<table class="table table-hover">
 							
 		<tr>
@@ -83,7 +89,8 @@
 			<td>${vendor.phone}</td>
 			<td>${vendor.rating}</td>
 			<input type="hidden" name="email" value="${vendor.email}"/>
-			<td><!-- <a href="meals.html">View</a> --><input type="submit" value="View"/></td>
+			<td><!-- <a href="meals.html">View</a> -->
+			<input type="submit" value="View"/></td>
 			</form>
     		</tr>
     	</c:forEach>
@@ -100,8 +107,13 @@
 
 <br />
 <br />
-<br />
+
+<div class="view_order">
 <a href = "allOrders.htm">View Orders</a>
+</div>
+
+<br />
+<br />
 <div class="row">
                 <div class="col-md-4">
 	<div class="demo-card">
@@ -156,15 +168,14 @@
 	<br />
 	<br />
 	<br />
-	<br />
-	<br />
-	<div class="row">
+	
+	<!--  <div class="row">
 	<div class="rns">
                     <div class="col-lg-12">
                       Design By <a href="http://www.resoneuronance.com/"><strong>Team Resoneuronance</strong></a>
                     </div>
                 </div>
-	</div>
+	</div>-->
 	
 	<footer>
 	<div class="footer-below">

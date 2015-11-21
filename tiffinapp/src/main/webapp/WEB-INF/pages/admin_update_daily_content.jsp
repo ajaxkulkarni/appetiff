@@ -23,7 +23,36 @@
   <link href="<c:url value = "../../resources/assets/css/meals_select.css"/>" rel="stylesheet">
   <%} %>
 </head>
-<body>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<div class="col-lg-12">
+                <a class="navbar-brand" href="#page-top">tiffEat</a>
+				
+				</div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>Mahalaxmi Tiffins</h2>
 <div class="container">
 	<form action="updateDailyContent" method="post">         
         <div class="main">
@@ -53,7 +82,7 @@
                                 <div class="col-md-5">
                                     <input type="text" name="subItem1" value="${dailyContent.subItem1}" class="form-control">
                                 </div>
-                            </div>
+                           </div>
                             <div class="row rowdiv">
                                 <div class="col-md-6">
                                     <h5>Rice/Dal</h5>
