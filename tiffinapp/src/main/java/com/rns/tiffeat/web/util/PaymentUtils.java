@@ -9,8 +9,8 @@ import com.rns.tiffeat.web.bo.domain.PayUDetails;
 import com.rns.tiffeat.web.bo.domain.PaymentType;
 
 public class PaymentUtils implements Constants {
-
 	
+
 	public static PayUDetails preparePayUDetails(CustomerOrder order) throws NoSuchAlgorithmException {
 		if(order.getMeal() == null || order.getCustomer()== null) {
 			return null;
@@ -46,11 +46,12 @@ public class PaymentUtils implements Constants {
 		keyBuilder.append("").append("|"); //udf3
 		keyBuilder.append("").append("|"); //udf4
 		keyBuilder.append("").append("|"); //udf5
-		keyBuilder.append("|||||eCwWELxi");
+		keyBuilder.append("|||||" + MERCHANT_SALT);
 		return generateKey(keyBuilder.toString());
 	}
 
 	private static String generateKey(String key) throws NoSuchAlgorithmException {
+		System.out.println("Hash :" + key);
         MessageDigest md = MessageDigest.getInstance("SHA-512");
         md.update(key.getBytes());
         
